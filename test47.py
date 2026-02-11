@@ -1,21 +1,31 @@
-if __name__ == '__main__':
-    k=int(input())
-    SL=[]
-    NL=[]
-    if 2 <= k <= 5 :
+n = int(input())
 
-        for _ in range(k):
-            name = input()
-            NL.append(name)
-            score = float(input())
-            SL.append(score)  
+if 2 <= n <= 10:
+
+    arr = map(int, input().split())
+    score = list(arr)
+
+    # Check range
+    for i in score:
+        if not (-100 <= i <= 100):
+            print("Not valid")
+            exit()
+
+    # Sort in descending order
+    score.sort(reverse=True)
+
+    # Find maximum
+    k = max(score)
+
+    # Count how many times max appears
+    a = 0
+    for i in score:
+        if i == k:
+            a += 1
+
+    # If all elements are same
+    if a == n:
+        print(k)
     else:
-        print("Error")
-
-SL.sort()
-j=min(SL)
-count=0
-for i in range (len(SL)):
-    if i==j:
-        count+=1
-second_high=SL[count]
+        # Print runner-up
+        print(score[a])
