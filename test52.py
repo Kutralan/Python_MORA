@@ -1,6 +1,6 @@
 E=int(input("enter your electricity consumption in kwh " ) )
 if E==0:
-    bill=0
+    bill=400
 elif E<=30:
     bill= E*30 + 400
 elif E<=60:
