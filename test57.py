@@ -1,7 +1,7 @@
 num=1
-while num>0:
+while num>=0:
     num=int(input())
-    if num==1:
+    if num==1 or num==0:
         print("non-prime")
     
     else:
