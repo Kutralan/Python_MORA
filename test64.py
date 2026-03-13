@@ -1,5 +1,6 @@
 matrix = []
 error = False
+count=0
 
 while True:
     try:
@@ -12,17 +13,18 @@ while True:
         break
 
     matrix.append(row)
-
+    count+=1
 if error:
     print("Error")
     exit()
+if count>0:
 
-for i in range(1, len(matrix)):
-    if len(matrix[i]) != len(matrix[0]):
-        print("Invalid Matrix")
-        exit()
+    for i in range(1, len(matrix)):
+        if len(matrix[i]) != len(matrix[0]):
+            print("Invalid Matrix")
+            exit()
 
-for j in range(len(matrix[0])):
-    for i in range(len(matrix)):
-        print(matrix[i][j], end=" ")
-    print() 
+    for j in range(len(matrix[0])):
+        for i in range(len(matrix)):
+            print(matrix[i][j], end=" ")
+        print() 
