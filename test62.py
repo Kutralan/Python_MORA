@@ -16,9 +16,13 @@ while number_1 != -1:
     row.insert(0,number_1)
     matrix.append(row)
 
-    number_1=int(input())
+    try:
+        number_1=int(input())
+    except:
+        print("Error") 
+        number_1=-1
 
 for i in range(1,len(matrix)):
     if len(matrix[0])!=len(matrix[i]):
         print("Invalid Matrix")
-        break
+        break 
