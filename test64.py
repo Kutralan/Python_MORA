@@ -22,8 +22,7 @@ for i in range(1, len(matrix)):
         print("Invalid Matrix")
         exit()
 
-
 for j in range(len(matrix[0])):
     for i in range(len(matrix)):
         print(matrix[i][j], end=" ")
-    print() 
+    print()
