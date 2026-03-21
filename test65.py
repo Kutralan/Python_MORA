@@ -1,0 +1,7 @@
+file = open("ui.txt", "w")
+file.write("Hello, this is Python!")
+file.close()
+file = open("ui.txt", "r")
+content = file.read()
+print(content)
+file.close()

@@ -1,2 +1,2 @@
-Name: ef        Score: 45.0  Grade: S
-Name: 32f       Score: 45.0  Grade: S
+nini 56 C
+jnin 36 F
