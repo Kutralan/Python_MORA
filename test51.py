@@ -1,5 +1,5 @@
-date=(input("Enter the date(Ex:year month date): "))
-year,month,date=date.split(" ")
+
+year,month,date=(input("Enter the date(Ex:year month date): ")).split(" ")
 y=int(year)
 m=int(month)
 d=int(date)
